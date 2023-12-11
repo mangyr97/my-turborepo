@@ -1,0 +1,24 @@
+{
+  "name": "contract",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "lint": "eslint .",
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "dev": "npm run build -- --watch"
+  },
+  "dependencies": {
+    "@anatine/zod-nestjs": "^2.0.3",
+    "@anatine/zod-openapi": "^2.2.1",
+    "openapi3-ts": "^4.1.2",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "eslint-config-custom": "workspace:*",
+    "tsconfig": "workspace:*",
+    "tsup": "^8.0.1"
+  }
+}
