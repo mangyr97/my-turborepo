@@ -10,6 +10,7 @@ export const CatZ = extendApi(
   {
     title: 'Cat',
     description: 'A cat',
+    example: {name: 'Levi', age: 1, breed: 'white'}
   }
 );
 export class CatDto extends createZodDto(CatZ) {}
